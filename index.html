@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Libyan Elite University Training Center - Advanced Professional Training in Benghazi">
+    <title>Libyan Elite University Training Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">LEU<span class="accent">TC</span></div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">
+                Libyan Elite University<br>
+                <span class="gradient-text">Training Center</span>
+            </h1>
+            <p class="hero-tagline">Advanced Professional Training in Benghazi</p>
+            <ul class="hero-offerings">
+                <li class="fade-item">Industry-Relevant Curriculum</li>
+                <li class="fade-item">Expert Faculty & Mentors</li>
+                <li class="fade-item">Career-Focused Programs</li>
+                <li class="fade-item">Modern Facilities & Labs</li>
+            </ul>
+            <div class="cta-group">
+                <a href="#programs" class="btn-primary btn-glow">Explore Programs</a>
+                <a href="#contact" class="btn-secondary">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Programs</h2>
+                <p>Explore our comprehensive training programs tailored for your success</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-container fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="faculty">Faculty Courses</button>
+                <button class="filter-btn" data-filter="trending">Trending Topics</button>
+                <button class="filter-btn" data-filter="summer">Summer Training</button>
+            </div>
+
+            <!-- Program Cards -->
+            <div class="programs-grid" id="programsGrid">
+                <!-- Faculty Courses -->
+                <div class="program-card" data-category="faculty">
+                    <div class="card-header">
+                        <h3>Information Technology</h3>
+                        <span class="badge faculty">Faculty Course</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Comprehensive IT fundamentals and advanced applications</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 12 weeks</span>
+                            <span><strong>Prerequisites:</strong> Basic computer knowledge</span>
+                            <span><strong>Schedule:</strong> Mon/Wed/Fri 9AM-12PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="faculty">
+                    <div class="card-header">
+                        <h3>Law & Legal Studies</h3>
+                        <span class="badge faculty">Faculty Course</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Modern legal practices and constitutional law principles</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 14 weeks</span>
+                            <span><strong>Prerequisites:</strong> None</span>
+                            <span><strong>Schedule:</strong> Tue/Thu 2PM-5PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="faculty">
+                    <div class="card-header">
+                        <h3>Commerce & Business</h3>
+                        <span class="badge faculty">Faculty Course</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Contemporary business management and commerce strategies</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 10 weeks</span>
+                            <span><strong>Prerequisites:</strong> Basic math skills</span>
+                            <span><strong>Schedule:</strong> Wed/Fri 10AM-1PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trending Topics -->
+                <div class="program-card" data-category="trending">
+                    <div class="card-header">
+                        <h3>Software Engineering</h3>
+                        <span class="badge trending">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Full-stack development with modern frameworks</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 16 weeks</span>
+                            <span><strong>Prerequisites:</strong> Programming fundamentals</span>
+                            <span><strong>Schedule:</strong> Mon-Fri 9AM-1PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="trending">
+                    <div class="card-header">
+                        <h3>Cyber Security</h3>
+                        <span class="badge trending">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Ethical hacking and network security protocols</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 18 weeks</span>
+                            <span><strong>Prerequisites:</strong> Network fundamentals</span>
+                            <span><strong>Schedule:</strong> Tue/Thu/Sat 10AM-2PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card" data-category="trending">
+                    <div class="card-header">
+                        <h3>Artificial Intelligence</h3>
+                        <span class="badge trending">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Machine learning, deep learning, and AI applications</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 20 weeks</span>
+                            <span><strong>Prerequisites:</strong> Advanced mathematics</span>
+                            <span><strong>Schedule:</strong> Mon/Wed/Fri 2PM-6PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summer Training -->
+                <div class="program-card" data-category="summer">
+                    <div class="card-header">
+                        <h3>Summer Training 2024</h3>
+                        <span class="badge summer">Summer</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-desc">Intensive 40-hour summer professional training program</p>
+                        <div class="card-details">
+                            <span><strong>Duration:</strong> 2 weeks intensive</span>
+                            <span><strong>Prerequisites:</strong> Enrolled student</span>
+                            <span><strong>Schedule:</strong> Daily 9AM-3PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>About Our Center</h2>
+                    <p>The Libyan Elite University Training Center is dedicated to providing world-class professional education in Benghazi. We bridge the gap between academic knowledge and industry requirements.</p>
+                    
+                    <h3>Mission</h3>
+                    <p>To empower individuals and organizations with cutting-edge skills and knowledge that drive professional excellence and contribute to Libya's economic development.</p>
+                    
+                    <h3>Vision</h3>
+                    <p>To become the premier training institution in North Africa, recognized for innovation, quality, and industry partnerships.</p>
+                </div>
+                
+                <div class="about-audience fade-in">
+                    <h3>Who Should Attend?</h3>
+                    <ul>
+                        <li><strong>Students:</strong> Enhance your academic learning with practical skills</li>
+                        <li><strong>Professionals:</strong> Upskill and stay competitive in your field</li>
+                        <li><strong>Organizations:</strong> Custom corporate training solutions</li>
+                    </ul>
+                    
+                    <div class="partnerships">
+                        <h4>Faculty Partnerships</h4>
+                        <p>We collaborate with leading university faculties to ensure our programs meet the highest academic standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Our Students Say</h2>
+                <p>Success stories from our alumni community</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="quote">The Software Engineering program transformed my career. The instructors were industry experts and the hands-on projects prepared me for real-world challenges.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Ahmed Mahmoud</strong>
+                        <span class="program">Software Engineering</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="quote">Completing the Cyber Security certification opened doors to opportunities I never imagined. The training center's reputation is well-deserved.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Fatima Hassan</strong>
+                        <span class="program">Cyber Security</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="quote">The Summer Training program was intensive but incredibly rewarding. It gave me the practical experience that employers are looking for.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Yousef Ali</strong>
+                        <span class="program">Summer Training 2023</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="quote">Business commerce program gave me insights into modern market strategies. Excellent facilities and supportive staff.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Salma Abdul</strong>
+                        <span class="program">Commerce & Business</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="quote">The AI and Machine Learning course is world-class. I'm now working on cutting-edge projects thanks to the solid foundation I received here.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Khalid Omar</strong>
+                        <span class="program">Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Training Schedule</h2>
+                <p>Upcoming sessions and enrollment information</p>
+            </div>
+
+            <div class="schedule-filters fade-in">
+                <button class="filter-btn active" data-schedule="all">All Courses</button>
+                <button class="filter-btn" data-schedule="faculty">Faculty</button>
+                <button class="filter-btn" data-schedule="trending">Trending</button>
+                <button class="filter-btn" data-schedule="summer">Summer</button>
+            </div>
+
+            <div class="schedule-grid" id="scheduleGrid">
+                <div class="schedule-item" data-type="faculty">
+                    <div class="schedule-header">
+                        <h4>Information Technology</h4>
+                        <span class="status enrollment">Enrollment Open</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> March 15, 2024</span>
+                        <span><strong>End:</strong> June 7, 2024</span>
+                        <span><strong>Slots:</strong> 25/30 available</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item" data-type="trending">
+                    <div class="schedule-header">
+                        <h4>Software Engineering</h4>
+                        <span class="status enrollment">Enrollment Open</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> April 1, 2024</span>
+                        <span><strong>End:</strong> July 20, 2024</span>
+                        <span><strong>Slots:</strong> 15/20 available</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item" data-type="trending">
+                    <div class="schedule-header">
+                        <h4>Cyber Security</h4>
+                        <span class="status enrollment">Enrollment Open</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> March 20, 2024</span>
+                        <span><strong>End:</strong> July 15, 2024</span>
+                        <span><strong>Slots:</strong> 8/15 available</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item" data-type="trending">
+                    <div class="schedule-header">
+                        <h4>Artificial Intelligence</h4>
+                        <span class="status enrollment">Enrollment Open</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> April 10, 2024</span>
+                        <span><strong>End:</strong> August 30, 2024</span>
+                        <span><strong>Slots:</strong> 12/18 available</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item" data-type="faculty">
+                    <div class="schedule-header">
+                        <h4>Law & Legal Studies</h4>
+                        <span class="status enrollment">Enrollment Open</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> March 18, 2024</span>
+                        <span><strong>End:</strong> June 25, 2024</span>
+                        <span><strong>Slots:</strong> 20/30 available</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item" data-type="summer">
+                    <div class="schedule-header">
+                        <h4>Summer Training 2024</h4>
+                        <span class="status full">Waitlist</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> July 1, 2024</span>
+                        <span><strong>End:</strong> July 14, 2024</span>
+                        <span><strong>Slots:</strong> 0/40 available</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item" data-type="faculty">
+                    <div class="schedule-header">
+                        <h4>Commerce & Business</h4>
+                        <span class="status enrollment">Enrollment Open</span>
+                    </div>
+                    <div class="schedule-details">
+                        <span><strong>Start:</strong> March 25, 2024</span>
+                        <span><strong>End:</strong> June 5, 2024</span>
+                        <span><strong>Slots:</strong> 18/25 available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our programs</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I enroll in a program?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can enroll by visiting our contact section below, calling our office, or sending an email. Our enrollment team will guide you through the registration process and help you choose the right program for your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What are the program costs?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Program costs vary by course duration and specialization. Faculty courses range from 800-1200 LYD, trending topics from 1500-2500 LYD, and summer training is 600 LYD. We offer flexible payment plans for qualified candidates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What certifications will I receive?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Upon successful completion, you will receive a Libyan Elite University Training Center certificate accredited by the university. Specialized programs also include industry-recognized certifications where applicable.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Are there prerequisites for courses?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Prerequisites vary by program. Most faculty courses have minimal prerequisites, while advanced trending topics may require specific background knowledge. Each program page lists detailed requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I attend classes online?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently, most programs are offered in-person to ensure hands-on experience. However, hybrid options are available for select courses. Contact us to discuss available online learning options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is job placement assistance provided?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We provide career counseling, resume building workshops, interview preparation, and connect students with our network of hiring partners. Many of our graduates have secured positions with top organizations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <p>Ready to advance your career? Contact us today</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+218611234567">+218 61 123 4567</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:training@libyanelite.edu.ly">training@libyanelite.edu.ly</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Location:</strong>
+                        <span>Libyan Elite University Campus<br>Benghazi, Libya</span>
+                    </div>
+                    
+                    <h3>Office Hours</h3>
+                    <p>Saturday - Thursday: 8:00 AM - 4:00 PM<br>Friday: Closed</p>
+                    
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="enrollment-cta fade-in">
+                    <h3>Start Your Journey Today</h3>
+                    <p>Join thousands of students who have transformed their careers through our training programs.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:training@libyanelite.edu.ly" class="btn-primary btn-glow">Send Application</a>
+                        <a href="tel:+218611234567" class="btn-secondary">Call Now</a>
+                    </div>
+                    <div class="urgent-notice">
+                        <p><strong>Limited spots available!</strong> Early enrollment recommended for popular programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Libyan Elite University Training Center. All rights reserved.</p>
+            <p>Benghazi, Libya | Email: training@libyanelite.edu.ly</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
